@@ -1,0 +1,1 @@
+![Dimensions svg](./dimensions.svg)
