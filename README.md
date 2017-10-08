@@ -1,1 +1,1 @@
-![Dimensions svg](./dimensions.svg)
+![Dimensions svg](dimensions.svg)
