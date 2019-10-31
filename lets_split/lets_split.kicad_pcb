@@ -1,9 +1,6 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-3-g5ebb6b6)")
 
   (general
-    (links 160)
-    (no_connects 2)
-    (area 36.386172 31.485 149.075001 114.5692)
     (thickness 1.6)
     (drawings 29)
     (tracks 287)
@@ -66,6 +63,9 @@
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions false)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -74,8 +74,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
-      (hpglpenoverlay 2)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -662,10 +661,10 @@
   (module LOGO (layer B.Cu) (tedit 0) (tstamp 57D4D7D7)
     (at 118.75 78 180)
     (fp_text reference G*** (at 0 0 180) (layer B.SilkS) hide
-      (effects (font (thickness 0.3)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_text value LOGO (at 0.75 0 180) (layer B.SilkS) hide
-      (effects (font (thickness 0.3)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_poly (pts (xy -3.544901 11.430246) (xy -3.386107 11.426116) (xy -3.242855 11.418719) (xy -3.1283 11.408161)
       (xy -3.055596 11.394545) (xy -3.043692 11.389763) (xy -2.929086 11.321471) (xy -2.83547 11.246056)
@@ -1206,10 +1205,10 @@
   (module LOGO (layer F.Cu) (tedit 0) (tstamp 57D4D5BE)
     (at 127 87.75)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
-      (effects (font (thickness 0.3)))
+      (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_poly (pts (xy -7.731883 21.271219) (xy -7.746654 21.330141) (xy -7.771605 21.397192) (xy -7.799859 21.454032)
       (xy -7.82454 21.48232) (xy -7.825617 21.482672) (xy -7.848375 21.486154) (xy -7.827778 21.468827)
@@ -2481,13 +2480,13 @@
   (module footprint:4pin35mmAudio (layer F.Cu) (tedit 4FD999CA) (tstamp 57D456AB)
     (at 131.65 32.85 270)
     (path /57D49FBD)
-    (fp_text reference J2 (at 1.27 0 360) (layer F.SilkS) hide
+    (fp_text reference J2 (at 1.27 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.778) (thickness 0.3048)))
     )
-    (fp_text value 6PIN (at 5.715 0 360) (layer F.SilkS)
+    (fp_text value 6PIN (at 5.715 0) (layer F.SilkS)
       (effects (font (size 1.524 1.778) (thickness 0.3048)))
     )
-    (fp_text user 3.5mm (at 5.715 0 360) (layer B.SilkS)
+    (fp_text user 3.5mm (at 5.715 0) (layer B.SilkS)
       (effects (font (size 1.524 1.778) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start 0 -4.8006) (end 0 -2.2479) (layer Dwgs.User) (width 0.381))
@@ -2532,7 +2531,7 @@
     (fp_text reference R1 (at 0 0 180) (layer B.SilkS) hide
       (effects (font (size 1.27 1.016) (thickness 0.2032)) (justify mirror))
     )
-    (fp_text value R (at 0 0 360) (layer B.SilkS)
+    (fp_text value R (at 0 0) (layer B.SilkS)
       (effects (font (size 1.27 1.016) (thickness 0.2032)) (justify mirror))
     )
     (fp_line (start -3.175 1.27) (end 3.175 1.27) (layer Dwgs.User) (width 0.381))
@@ -2587,15 +2586,15 @@
   )
 
   (module flipalps:MXALPS_FLIP (layer F.Cu) (tedit 57FAE629) (tstamp 57D456CC)
-    (at 45.5 46.85)
+    (at 45.55 46.85)
     (descr MXALPS)
     (tags MXALPS)
     (path /57D441DE)
     (fp_text reference SW1 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2622,15 +2621,15 @@
   )
 
   (module flipalps:MXALPS_FLIP (layer F.Cu) (tedit 57FAE5C7) (tstamp 57D456D7)
-    (at 45.55 65.95)
+    (at 45.55 65.9)
     (descr MXALPS)
     (tags MXALPS)
     (path /57D45779)
     (fp_text reference SW2 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2657,15 +2656,15 @@
   )
 
   (module flipalps:MXALPS_FLIP (layer F.Cu) (tedit 57FAE5BD) (tstamp 57D456E2)
-    (at 45.5 85)
+    (at 45.5 84.95)
     (descr MXALPS)
     (tags MXALPS)
     (path /57D45C1A)
     (fp_text reference SW3 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2692,15 +2691,15 @@
   )
 
   (module flipalps:MXALPS_FLIP (layer F.Cu) (tedit 57FAE577) (tstamp 57D456ED)
-    (at 45.5 104.15)
+    (at 45.5 104)
     (descr MXALPS)
     (tags MXALPS)
     (path /57D45C67)
     (fp_text reference SW4 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2732,10 +2731,10 @@
     (tags MXALPS)
     (path /57D44302)
     (fp_text reference SW5 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2767,10 +2766,10 @@
     (tags MXALPS)
     (path /57D45785)
     (fp_text reference SW6 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2802,10 +2801,10 @@
     (tags MXALPS)
     (path /57D45C26)
     (fp_text reference SW7 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2837,10 +2836,10 @@
     (tags MXALPS)
     (path /57D45C73)
     (fp_text reference SW8 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2872,10 +2871,10 @@
     (tags MXALPS)
     (path /57D444D2)
     (fp_text reference SW9 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2907,10 +2906,10 @@
     (tags MXALPS)
     (path /57D45791)
     (fp_text reference SW10 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2942,10 +2941,10 @@
     (tags MXALPS)
     (path /57D45C32)
     (fp_text reference SW11 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -2980,7 +2979,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3012,10 +3011,10 @@
     (tags MXALPS)
     (path /57D444DE)
     (fp_text reference SW13 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3047,10 +3046,10 @@
     (tags MXALPS)
     (path /57D4579D)
     (fp_text reference SW14 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3082,10 +3081,10 @@
     (tags MXALPS)
     (path /57D45C3E)
     (fp_text reference SW15 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3117,10 +3116,10 @@
     (tags MXALPS)
     (path /57D45C8B)
     (fp_text reference SW16 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3152,10 +3151,10 @@
     (tags MXALPS)
     (path /57D4466E)
     (fp_text reference SW17 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3187,10 +3186,10 @@
     (tags MXALPS)
     (path /57D457A9)
     (fp_text reference SW18 (at 0 3.048) (layer B.SilkS)
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3222,10 +3221,10 @@
     (tags MXALPS)
     (path /57D45C4A)
     (fp_text reference SW19 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3257,10 +3256,10 @@
     (tags MXALPS)
     (path /57D45C97)
     (fp_text reference "" (at 0 3.048) (layer B.SilkS)
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3292,10 +3291,10 @@
     (tags MXALPS)
     (path /57D4467A)
     (fp_text reference SW21 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3327,10 +3326,10 @@
     (tags MXALPS)
     (path /57D457B5)
     (fp_text reference SW22 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3362,10 +3361,10 @@
     (tags MXALPS)
     (path /57D45C56)
     (fp_text reference SW23 (at 0 3.048) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
@@ -3397,10 +3396,10 @@
     (tags MXALPS)
     (path /57D45CA3)
     (fp_text reference "" (at 0 3.048) (layer B.SilkS)
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW_PUSH (at -3.5 9) (layer B.SilkS) hide
-      (effects (font (thickness 0.3048)) (justify mirror))
+      (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_line (start -7.75 6.4) (end -7.75 -6.4) (layer Dwgs.User) (width 0.3))
     (fp_line (start -7.75 6.4) (end 7.75 6.4) (layer Dwgs.User) (width 0.3))
